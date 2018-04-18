@@ -1,0 +1,32 @@
+1. Install Node.js if you do not have it -> (https://nodejs.org/en/)
+1. Install NPM if you do not have it -> ( Node 6.9.0 or higher, together with NPM 3 or higher)
+2. In the command line run -> npm install -g @angular/cli
+4. In the command line navigate to the ICT-Test-Project folder.
+5. In the command line run -> npm install
+6. In the command line run -> ng serve (This will run the application)
+7. Open a browser and navigate to http://localhost:4200/
+8. You should not be looking at a blank page displaying "ict-test works!".
+9. You are all set to start!
+
+A basic Angular project has been set up. 
+The root of the application is the app.component. 
+This root component is displaying ict-test.component. 
+The ict-test.component is injecting the ict-test.service. 
+You will need to use the ict-test.service to make a Get request to display users in the ict-test.component.
+
+For basic guidance on Angular see: https://angular.io/tutorial
+
+Project Instructions:
+
+1. In ict-test.service create a function to make a Get request to https://jsonplaceholder.typicode.com/users.
+   No authentication is required for this URL, the URL is already stored in the service. The request will
+   return a list of 10 users with several properties. 
+   (All the neccesary modules and components are already imported)
+
+2. In ict-test.component consume the Get request function to get all the users on loading the component.
+
+3. Using ict-test.component.ts and ict-test.component.html display each User on the page 
+   including (name, username, city, website).
+
+4. Add some styling to the page. You can import a library or make some custom CSS. 
+   (Don't spend too long on this, just make it look a bit better)
